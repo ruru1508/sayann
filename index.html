@@ -288,7 +288,7 @@ section{
   text-transform:uppercase;
 }
 
-/* ---------------- SECTION TITLES ---------------- */
+/* ---------------- TITLES ---------------- */
 
 .section-title{
   text-align:center;
@@ -347,3 +347,1235 @@ section{
   color:#df719b;
   font-size:1.05em;
 }
+
+/* ---------------- JOURNEY ---------------- */
+
+.timeline{
+  position:relative;
+  max-width:850px;
+  margin:auto;
+  padding-left:25px;
+}
+
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:linear-gradient(#82c9ea,var(--pink),transparent);
+}
+
+.t-item{
+  position:relative;
+  margin-bottom:25px;
+  padding:27px 27px 27px 30px;
+}
+
+.t-item:before{
+  content:"";
+  position:absolute;
+  left:-23px;
+  top:31px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 0 5px rgba(244,154,187,.16);
+}
+
+.date{
+  color:#6aa8c6;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+.t-item h3{
+  font-family:'Playfair Display',serif;
+  font-size:24px;
+  margin-bottom:10px;
+  color:var(--blue-dark);
+}
+
+.t-item p{
+  color:#67889e;
+  line-height:1.8;
+}
+
+/* ---------------- LOVE ---------------- */
+
+.love-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:17px;
+  max-width:950px;
+  margin:auto;
+}
+
+.love-card{
+  padding:26px;
+  min-height:145px;
+  transition:.3s;
+}
+
+.love-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 25px 55px rgba(65,135,172,.18);
+}
+
+.love-card .num{
+  color:var(--pink-dark);
+  font-weight:800;
+  font-size:13px;
+}
+
+.love-card h3{
+  margin:7px 0;
+  color:var(--blue-dark);
+  font-size:19px;
+}
+
+.love-card p{
+  color:#7896a8;
+  line-height:1.65;
+  font-size:14px;
+}
+
+.full-love{
+  grid-column:1/-1;
+  text-align:center;
+  padding:34px;
+  font-family:'Great Vibes',cursive;
+  color:var(--pink-dark);
+  font-size:41px;
+}
+
+/* ---------------- 19 REASONS ---------------- */
+
+.reasons{
+  max-width:800px;
+  margin:auto;
+  display:grid;
+  gap:10px;
+}
+
+.reason{
+  display:flex;
+  gap:17px;
+  align-items:center;
+  padding:17px 20px;
+  border-radius:17px;
+  border:1px solid rgba(52,119,155,.1);
+  background:rgba(255,255,255,.55);
+  transition:.25s;
+}
+
+.reason:hover{
+  background:rgba(255,255,255,.82);
+  transform:translateX(5px);
+}
+
+.reason .rnum{
+  width:35px;
+  height:35px;
+  flex:0 0 35px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#e0f5ff;
+  color:#63a2c2;
+  font-size:12px;
+  font-weight:800;
+}
+
+.reason span:last-child{
+  color:#5f8197;
+  line-height:1.5;
+}
+
+/* ---------------- MEMORIES ---------------- */
+
+.memory-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:17px;
+  max-width:950px;
+  margin:auto;
+}
+
+.memory{
+  padding:28px;
+}
+
+.memory h3{
+  font-family:'Playfair Display',serif;
+  font-size:23px;
+  color:var(--blue-dark);
+  margin-bottom:10px;
+}
+
+.memory p{
+  color:#68899f;
+  line-height:1.8;
+}
+
+.memory.wide{
+  grid-column:1/-1;
+}
+
+/* ---------------- BEAUTIFUL ---------------- */
+
+.beautiful{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+  padding:58px 25px;
+  position:relative;
+  overflow:hidden;
+}
+
+.beautiful:before{
+  content:"♡";
+  position:absolute;
+  font-size:260px;
+  color:rgba(244,154,187,.08);
+  right:-20px;
+  top:-80px;
+}
+
+.beautiful h2{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(54px,9vw,88px);
+  color:var(--pink-dark);
+  font-weight:400;
+  position:relative;
+}
+
+.beautiful .special{
+  max-width:680px;
+  margin:20px auto 0;
+  color:#6a8ba0;
+  line-height:1.9;
+  position:relative;
+}
+
+.beautiful .special em{
+  color:var(--blue-dark);
+  font-style:normal;
+  font-weight:700;
+}
+
+.beautiful .line{
+  width:80px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--pink),transparent);
+  margin:25px auto;
+}
+
+/* ---------------- SOMEDAY ---------------- */
+
+.firsts{
+  max-width:850px;
+  margin:auto;
+}
+
+.firsts-intro{
+  text-align:center;
+  color:#7193a8;
+  line-height:1.9;
+  margin-bottom:28px;
+}
+
+.firsts-intro strong{
+  color:var(--blue-dark);
+}
+
+.first-row{
+  display:grid;
+  grid-template-columns:1fr 35px 1fr;
+  align-items:center;
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.first-row .icon{
+  text-align:center;
+  color:var(--pink);
+  font-size:23px;
+}
+
+.first-row strong{
+  font-family:'Playfair Display',serif;
+  font-size:19px;
+  color:var(--blue-dark);
+}
+
+.first-row p{
+  color:#88a2b2;
+  font-size:13px;
+  margin-top:4px;
+}
+
+.first-row:nth-child(even){
+  text-align:right;
+}
+
+/* ---------------- FLOATING HEARTS ---------------- */
+
+.floating-heart{
+  position:fixed;
+  bottom:-30px;
+  pointer-events:none;
+  z-index:2;
+  animation:rise linear forwards;
+  color:var(--pink);
+  opacity:.65;
+}
+
+@keyframes rise{
+  to{
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.15);
+  }
+}
+
+@keyframes float{
+  50%{
+    transform:translateY(-7px);
+  }
+}
+
+@keyframes shake{
+  25%{transform:translateX(-6px)}
+  50%{transform:translateX(6px)}
+  75%{transform:translateX(-4px)}
+}
+
+.shake{
+  animation:shake .35s;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:700px){
+
+  nav{
+    justify-content:flex-start;
+  }
+
+  .hero{
+    padding-top:110px;
+  }
+
+  .hero h1{
+    font-size:53px;
+  }
+
+  .hero .sub{
+    font-size:15px;
+  }
+
+  section{
+    padding:85px 15px;
+  }
+
+  .diary{
+    font-size:15px;
+    padding:28px 20px;
+  }
+
+  .love-grid,
+  .memory-grid{
+    grid-template-columns:1fr;
+  }
+
+  .full-love,
+  .memory.wide{
+    grid-column:auto;
+  }
+
+  .first-row{
+    grid-template-columns:1fr 28px 1fr;
+  }
+
+  .first-row strong{
+    font-size:16px;
+  }
+
+  .first-row p{
+    font-size:12px;
+  }
+.final-card{
+    padding:25px 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= PASSWORD ================= -->
+
+<div id="lockScreen">
+
+  <div class="lock-card" id="lockCard">
+
+    <div class="lock-heart">♡</div>
+
+    <h1>for Sayan</h1>
+
+    <p>
+      A tiny little corner of the internet,<br>
+      made especially for you.
+    </p>
+
+    <input
+      id="password"
+      class="lock-input"
+      type="password"
+      autocomplete="off"
+      placeholder="enter the password"
+    >
+
+    <button class="unlock-btn" id="unlock">
+      open my surprise ♡
+    </button>
+
+    <div class="error" id="error"></div>
+
+  </div>
+
+</div>
+
+<div class="progress" id="progress"></div>
+
+<!-- ================= WEBSITE ================= -->
+
+<main id="site">
+
+<!-- NAV -->
+
+<nav>
+  <a href="#home">home</a>
+  <a href="#diary">diary</a>
+  <a href="#journey">journey</a>
+  <a href="#love">you</a>
+  <a href="#reasons">19 reasons</a>
+  <a href="#memories">memories</a>
+  <a href="#firsts">someday</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div>
+
+    <div class="eyebrow">
+      A tiny internet corner made by khargosh
+    </div>
+
+    <h1>
+      Happy 19th
+      <span>Sayan ♡</span>
+    </h1>
+
+    <p class="sub">
+      🎂 welcome to 19, ghonchu 🎂
+    </p>
+
+    <div class="badge">
+      07 November · my favourite person's day
+    </div>
+
+    <div class="scroll">
+      scroll slowly ↓
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= DIARY ================= -->
+
+<section id="diary">
+
+  <div class="section-title">
+
+    <div class="small">page one</div>
+
+    <h2>Dear Raj,</h2>
+
+    <p>
+      A few things I have been wanting to tell you.
+    </p>
+
+  </div>
+
+  <article class="diary card">
+
+    <div class="dear">
+      Dear Raj ♡
+    </div>
+
+    <p>
+      I have always told you that Birthday's are somehow special
+      and this one is indeed.
+    </p>
+
+    <p class="shout">
+      ITS MY FAVVVV PERSON BDAYYYYYYYYYYYYYY
+      (MERA HI BIRTHDAY HAI ZDA KHUSH MT HO)
+    </p>
+
+    <p>
+      I don't think you realize how funny it is that you started out
+      as some random person in a random online group chat...
+    </p>
+
+    <p>
+      ...and somehow ended up becoming one of the most special
+      people in my life.
+    </p>
+
+    <p>
+      We started this on <strong>10 June 2025</strong>.
+      And ever since then, you've slowly become part of my everyday
+      life in ways I never expected.
+    </p>
+
+    <p>
+      Uh my kuchii puchiii baibyyboi, my baibygurl, are uh lost bbg?
+      I LOVE YOU SO MUCH&lt;3333
+    </p>
+
+    <p>
+      btw maine iski tayari 15 august se hi shuru krdi thi,
+      i was so confused what to for you and somehow ended up here,
+      even tho you deserve alot but yea this is all i could do right now,
+      im so sorry, i love you!
+    </p>
+
+    <p>
+      You call me khargosh.
+      I call you fulkumariii.
+      And honestly? I wouldn't trade those stupid names for anything.
+    </p>
+
+    <p>
+      I don't know exactly what the future looks like.
+      But I know I want to keep discovering it with you.
+    </p>
+
+    <p>
+      Happy birthday, Sayan.
+      I hope 19 is gonna be the besttt yours, khargosh ♡
+    </p>
+
+  </article>
+
+</section>
+
+<!-- ================= JOURNEY ================= -->
+
+<section id="journey">
+
+  <div class="section-title">
+
+    <div class="small">our little timeline</div>
+
+    <h2>The journey so far</h2>
+
+    <p>
+      The part I never want to forget.
+    </p>
+
+  </div>
+
+  <div class="timeline">
+
+    <article class="t-item card">
+
+      <div class="date">
+        06 January 2025
+      </div>
+
+      <h3>
+        the first real conversations
+      </h3>
+
+      <p>
+        jb humne pehli baar ek dusre se dhangse baat krni start kri
+        and uske baad kbhi bnd ni kri.
+        thankful to aaru jiske wajah se it all happened.
+      </p>
+
+    </article>
+
+    <article class="t-item card">
+
+      <div class="date">
+        the confession
+      </div>
+
+      <h3>
+        the day my brain went blank
+      </h3>
+
+      <p>
+        Jab pehli baar you confessed to me, sahi btau to yr I used
+        to write that date and save those screen shots in my id but
+        as you know they all got deleted (apne hi kre the).
+        I still try remembering which date it was cause that day
+        holds a special corner in my heart.
+        Vo angry confession, msg pdhte hi mera blank ho jana and
+        everything — it all felt sooo good.
+        I can never forget how I felt that one particular day.
+      </p>
+
+    </article>
+        <article class="t-item card">
+
+      <div class="date">
+        10 June 2025
+      </div>
+
+      <h3>
+        the proposal that got rejected 😭
+      </h3>
+
+      <p>
+        when I proposed uhhhhhh but got rejected instead uhh dumbo,
+        but hehhh we got into relationship.
+        And honestly, I would choose that beginning again.
+      </p>
+
+    </article>
+
+    <article class="t-item card">
+
+      <div class="date">
+        the little things
+      </div>
+
+      <h3>
+        songs, surprises & edits
+      </h3>
+
+      <p>
+        jis din humne sath m gaane sune, i liked that alot.
+        Those little surprises, edited pic of us together and those
+        edits u made for me, especially vo eyes wala trend —
+        you don't even know how grateful I felt and how emotional
+        I was by the thought of how can he love me itna sara.
+      </p>
+
+    </article>
+
+    <article class="t-item card">
+
+      <div class="date">
+        15 August 2026
+      </div>
+
+      <h3>
+        finally seeing your face on video
+      </h3>
+
+      <p>
+        on call when i saw your face in video call for the first time,
+        i meann GOSHHHH UHHH LOOOOKED SOOOOOOOOO
+        CUTEEEEEEEEEEEEE HOW CAN I NOT FALL FOR YOU EVEN MOREEEEE
+      </p>
+
+      <p style="margin-top:12px;color:#df719b;font-size:22px;">
+        muwahhh muwaahhhhhh ♡
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- ================= THINGS I LOVE ================= -->
+
+<section id="love">
+
+  <div class="section-title">
+
+    <div class="small">
+      things i love about you
+    </div>
+
+    <h2>
+      you, obviously.
+    </h2>
+
+    <p>
+      Six very serious reasons why I am this obsessed with you.
+    </p>
+
+  </div>
+
+  <div class="love-grid">
+
+    <article class="love-card card">
+
+      <div class="num">01</div>
+
+      <h3>Your eyes</h3>
+
+      <p>
+        yeah. those eyes. I could stare at them forever.
+      </p>
+
+    </article>
+
+    <article class="love-card card">
+
+      <div class="num">02</div>
+
+      <h3>Voice</h3>
+
+      <p>
+        one of those things that can instantly make my whole mood softer.
+      </p>
+
+    </article>
+
+    <article class="love-card card">
+
+      <div class="num">03</div>
+
+      <h3>That baccho wali smile</h3>
+
+      <p>
+        the cutest thing ever and you don't even get how much I love it.
+      </p>
+
+    </article>
+
+    <article class="love-card card">
+
+      <div class="num">04</div>
+
+      <h3>blehhh chicken obsession</h3>
+
+      <p>
+        of course this had to make the list. chicken is basically
+        your personality at this point.
+      </p>
+
+    </article>
+
+    <article class="love-card card">
+
+      <div class="num">05</div>
+
+      <h3>ghonchupana, idiotttt</h3>
+
+      <p>
+        your stupidness has somehow become one of my favourite things.
+      </p>
+
+    </article>
+
+    <article class="love-card card">
+
+      <div class="num">06</div>
+
+      <h3>and most importantly — the whole YOU</h3>
+
+      <p>
+        not one particular thing. just you. all of you.
+      </p>
+
+    </article>
+
+    <div class="full-love card">
+      Everything about you is beautiful, Sayan. ♡
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= 19 REASONS ================= -->
+
+<section id="reasons">
+
+  <div class="section-title">
+
+    <div class="small">
+      yes, i counted
+    </div>
+
+    <h2>
+      19 reasons ♡
+    </h2>
+
+    <p>
+      Because apparently one list wasn't enough.
+    </p>
+
+  </div>
+
+  <div class="reasons">
+
+    <div class="reason">
+      <span class="rnum">01</span>
+      <span>Your eyes.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">02</span>
+      <span>Your voice.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">03</span>
+      <span>The way you make ordinary days feel special.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">04</span>
+      <span>Your sense of humor.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">05</span>
+      <span>Our ridiculous conversations.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">06</span>
+      <span>The way you make me smile without even trying.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">07</span>
+      <span>The way you call me khargosh.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">08</span>
+      <span>Because you're my fulkumariii.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">09</span>
+      <span>Your voice notes.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">10</span>
+      <span>The comfort I feel with you.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">11</span>
+      <span>The way distance hasn't stopped you from feeling close.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">12</span>
+      <span>The little things you don't realize I notice.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">13</span>
+      <span>The way you make me smile.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">14</span>
+      <span>Your personality.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">15</span>
+      <span>Every memory we've made.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">16</span>
+      <span>Every stupid inside joke.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">17</span>
+      <span>The person you're becoming.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">18</span>
+      <span>The way you make me feel loved.</span>
+    </div>
+
+    <div class="reason">
+      <span class="rnum">19</span>
+      <span>Because you're Sayan. That's enough.</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= MEMORIES ================= -->
+
+<section id="memories">
+
+  <div class="section-title">
+
+    <div class="small">
+      a corner for us
+    </div>
+
+    <h2>
+            our favourite memories
+    </h2>
+
+    <p>
+      Some days are dates. Some days become permanent little
+      pieces of your heart.
+    </p>
+
+  </div>
+
+  <div class="memory-grid">
+
+    <article class="memory card">
+
+      <h3>
+        06 January 2025
+      </h3>
+
+      <p>
+        jb humne pehli baar ek dusre se dhangse baat krni start kri
+        and uske baad kbhi bnd ni kri.
+        thankful to aaru jiske wajah se it all happened.
+      </p>
+
+    </article>
+
+    <article class="memory card">
+
+      <h3>
+        The confession
+      </h3>
+
+      <p>
+        That angry confession. Me reading the message and going
+        completely blank. The date may have disappeared with the
+        screenshots, but the feeling didn't.
+        That day still has its own tiny corner in my heart.
+      </p>
+
+    </article>
+
+    <article class="memory card">
+
+      <h3>
+        10 June 2025
+      </h3>
+
+      <p>
+        The day I proposed, got rejected instead
+        (uhh dumbo), and somehow we still ended up together.
+        Honestly? Very us.
+      </p>
+
+    </article>
+
+    <article class="memory card">
+
+      <h3>
+        little surprises
+      </h3>
+
+      <p>
+        The little surprises. The edited picture of us.
+        The edits you made for me — especially that eyes wala trend.
+        I don't think you know how emotional and grateful I felt
+        thinking, “how can he love me itna sara?”
+      </p>
+
+    </article>
+
+    <article class="memory wide card">
+
+      <h3>
+        15 August 2026
+      </h3>
+
+      <p>
+        The first time I saw your face on video call.
+        And my honest reaction was basically:
+        GOSHHHH UHHH LOOOOKED SOOOOOOOOO
+        CUTEEEEEEEEEEEEE.
+        How was I supposed to not fall for you even more? 😭
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- ================= BEAUTIFUL ================= -->
+
+<section id="beautiful">
+
+  <div class="section-title">
+
+    <div class="small">
+      there is one word i don't use lightly
+    </div>
+
+    <h2>
+      this one is yours.
+    </h2>
+
+  </div>
+
+  <div class="beautiful card">
+
+    <h2>
+      You are indeed Beautiful, Raj.
+    </h2>
+
+    <div class="line"></div>
+
+    <p class="special">
+      I call people <em>pretty</em>.
+      You know that.
+      I don't use the word <em>beautiful</em> for just anyone.
+      For me, beautiful is when I know someone's soul and love
+      them unconditionally.
+      So on your special day, I want you to know this properly:
+    </p>
+
+    <p class="special">
+      <em>
+        You are indeed Beautiful Raj — both inside and out.
+      </em>
+    </p>
+
+    <p class="special">
+      Your possessiveness, your care, your love.
+      Everything.
+      The person you are on the inside is just as precious to me
+      as everything I adore on the outside.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= SOMEDAY ================= -->
+
+<section id="firsts">
+
+  <div class="section-title">
+
+    <div class="small">
+      the things we haven't done yet
+    </div>
+
+    <h2>
+      Someday ♡
+    </h2>
+
+    <p>
+      We haven't met yet.
+      Which means there are so many firsts still waiting for us.
+    </p>
+
+  </div>
+
+  <div class="firsts card" style="padding:28px 35px">
+
+    <div class="firsts-intro">
+      📱 <strong>screens</strong>
+      &nbsp; → &nbsp;
+      🚆 <strong>distance</strong>
+      &nbsp; → &nbsp;
+      🫂 <strong>same place</strong>
+    </div>
+
+    <div class="first-row">
+
+      <div>
+        <strong>Our first hug.</strong>
+        <p>
+          the one I've imagined a hundred times.
+        </p>
+      </div>
+
+      <div class="icon">♡</div>
+
+      <div></div>
+
+    </div>
+
+    <div class="first-row">
+
+      <div></div>
+
+      <div class="icon">♡</div>
+
+      <div>
+        <strong>Our first proper picture together.</strong>
+        <p>
+          not edited. not imagined. actually us.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="first-row">
+
+      <div>
+        <strong>Our first meal together.</strong>
+        <p>
+          and yes, I already know you're getting chicken.
+        </p>
+      </div>
+
+      <div class="icon">♡</div>
+
+      <div></div>
+
+    </div>
+
+    <div class="first-row">
+
+      <div></div>
+
+      <div class="icon">♡</div>
+
+      <div>
+        <strong>Our first stupid argument in person.</strong>
+        <p>
+          because obviously even that is waiting for us.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="first-row">
+
+      <div>
+        <strong>Our first birthday in the same room.</strong>
+        <p>
+          one day, no screen between us.
+        </p>
+      </div>
+
+      <div class="icon">♡</div>
+
+      <div></div>
+
+    </div>
+
+    <p style="
+      text-align:center;
+      color:#df719b;
+      font-family:'Great Vibes',cursive;
+      font-size:35px;
+      margin-top:30px;
+    ">
+      We haven't run out of firsts yet.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= FINAL BIRTHDAY MESSAGE ================= -->
+
+<section class="final" id="ending">
+
+  <div class="final-card">
+
+    <div class="eyebrow">
+      one last thing
+    </div>
+
+    <h2>
+      Happy 19th, my fulkumariii ♡
+    </h2>
+
+<p>
+      19 years ago, you came into this world.
+    </p>
+
+    <p>
+      And somehow, years later,
+      you ended up becoming my fulkumariii.
+    </p>
+
+    <p>
+      I still think it's crazy that we met in a random group chat.
+      Out of all the people I could have met,
+      I met you.
+    </p>
+
+    <p>
+      And if I had to choose again,
+      I'd still choose you.
+    </p>
+
+    <p style="margin-top:20px;">
+      I wish I could be there today.
+      I wish I could see your face when you read this.
+      I wish I could hear your laugh.
+      I wish I could give you the birthday hug you've never gotten from me.
+    </p>
+
+    <p>
+      But until the day we don't have to imagine those things...
+      I'll keep loving you from wherever I am.
+    </p>
+
+    <p class="big">
+      Happy 19th, my fulkumariii.
+    </p>
+
+    <p class="big">
+      I love you.
+    </p>
+
+    <p class="big">
+      Here's to 19...
+      <br>
+      and to all the birthdays we haven't celebrated together yet. ♡
+    </p>
+
+    <div class="signature">
+      — your khargosh
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  made with an unreasonable amount of love by khargosh
+  <span class="heart">♡</span>
+</footer>
+
+</main>
+</body>
+</html>
