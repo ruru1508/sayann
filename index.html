@@ -1579,3 +1579,52 @@ section{
 </main>
 </body>
 </html>
+
+</main>
+
+<script>
+const correctPassword = "mard ko dard nhi hota";
+
+const unlockButton = document.getElementById("unlock");
+const passwordInput = document.getElementById("password");
+const lockScreen = document.getElementById("lockScreen");
+const site = document.getElementById("site");
+const errorMessage = document.getElementById("error");
+const lockCard = document.getElementById("lockCard");
+
+function checkPassword() {
+  const enteredPassword = passwordInput.value.trim();
+
+  if (enteredPassword === correctPassword) {
+    lockScreen.style.opacity = "0";
+
+    setTimeout(() => {
+      lockScreen.style.display = "none";
+      site.classList.add("show");
+      window.scrollTo(0, 0);
+    }, 700);
+
+  } else {
+    errorMessage.textContent = "Wrong password, try again ♡";
+
+    lockCard.classList.remove("shake");
+    void lockCard.offsetWidth;
+    lockCard.classList.add("shake");
+
+    passwordInput.value = "";
+    passwordInput.focus();
+  }
+}
+
+unlockButton.addEventListener("click", checkPassword);
+
+passwordInput.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    checkPassword();
+  }
+});
+</script>
+
+</body>
+</html>
+
